@@ -27,6 +27,7 @@ body, html{
 
  /* top-bar */
  .b-wrapper{
+  min-width: 640px;
   width: 100%;
   min-height: 100%;
   position: relative;
@@ -123,3 +124,88 @@ body, html{
   }
  }
  /* END b-add */
+
+ /* b-content */
+ .b-content{
+  padding-top: 120px;
+ }
+ /* END b-content */
+
+ /* b-item */
+ .b-item{
+  @include pie-clearfix;
+  padding: 5px;
+  height: 195px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: block;
+  color: #363636;
+  &:active, &:focus{
+    opacity: 0.8;
+  }
+  &__image{
+    width: 40%;
+    float: left;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  &__img{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+  }
+  &__info{
+    float: left;
+    width: 60%; 
+    padding: 15px 10px 0 15px;
+  }
+ }
+ /* END b-item */
+
+ /* b-price */
+ .b-price{
+  @include pie-clearfix;
+  margin-bottom: 11px;
+  &__text{
+    font-size: 33px;
+  }
+  &__space{
+    float: right;
+    padding-top: 7px;
+    color: #d7362d;
+    font-size: 25px;
+  }
+ }
+ /* END b-price */
+
+ /* b-description */
+ .b-description{
+  height: 84px;
+  overflow: hidden;
+  margin-bottom: 9px;
+  &__text{
+    font-size: 17px;
+    line-height: 1.2;
+  }
+ }
+ /* END b-description */
+
+ /* b-contact */
+ .b-contact{
+  font-size: 25px;
+  white-space: nowrap;
+  &__name{
+    font-weight: bold;
+    vertical-align: bottom;
+    margin-right: 5px;
+  }
+  &__phone{
+    vertical-align: bottom;
+  }
+ }
+ /* END b-contact */
