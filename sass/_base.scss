@@ -8,6 +8,9 @@
 }
 a{
   text-decoration: none;
+  &:fous{
+    outline: none;
+  }
 }
 
 img {

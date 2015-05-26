@@ -17,6 +17,9 @@
 a {
   text-decoration: none;
 }
+a:fous {
+  outline: none;
+}
 
 img {
   max-height: 100%;
@@ -142,7 +145,16 @@ input, select {
 }
 .icon-menu {
   color: #757575;
-  font-size: 30px;
+  font-size: 47px;
+}
+.icon-search {
+  color: #757575;
+  font-size: 34px;
+  height: 35px;
+}
+.icon-plus {
+  color: #ebebeb;
+  font-size: 35px;
 }
 
 body, html {
@@ -179,16 +191,82 @@ body, html {
 
 /* END b-navigation */
 /* b-toggle-menu */
+.b-toggle-menu {
+  float: left;
+  width: 74px;
+  text-align: center;
+}
 .b-toggle-menu__button {
   display: block;
   line-height: 0;
+  padding-top: 7px;
 }
 
 /* END b-toggle-menu */
 /* b-top-bar */
 .b-top-bar {
+  *zoom: 1;
+  position: fixed;
+  width: 100%;
   background: #f1f1f1;
   padding: 10px;
+  border-bottom: 3px solid #d8d8d8;
+}
+.b-top-bar:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* END b-top-bar */
+/* b-search */
+.b-search {
+  float: left;
+  width: calc(100% - 160px);
+}
+.b-search__form {
+  position: relative;
+}
+.b-search__input-text {
+  height: 60px;
+  padding-left: 70px;
+  border: none;
+  width: 100%;
+  font-size: 28px;
+  padding-right: 5px;
+  color: #a9a9a9;
+}
+.b-search__input-submit {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  background: none;
+  height: 100%;
+  border: none;
+  padding-top: 4px;
+  width: 40px;
+}
+
+/* END b-search */
+/* b-add */
+.b-add {
+  float: left;
+  width: 74px;
+  padding-left: 10px;
+}
+.b-add__action {
+  border-radius: 8px;
+  border: 1px solid #cc362b;
+  background: #d0322b;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 11px;
+  height: 60px;
+  width: 74px;
+  margin: auto;
+  display: block;
+  box-shadow: inset 0 0 1px 1px #e35349;
+}
+
+/* END b-add */
