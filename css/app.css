@@ -164,9 +164,12 @@ input, select {
 
 body, html {
   height: 100%;
+  left: 0;
 }
 
-body.overflow {
+body.offMenu {
+  left: 55%;
+  position: relative;
   overflow: hidden;
 }
 
@@ -175,17 +178,7 @@ body.overflow {
   min-width: 640px;
   width: 100%;
   min-height: 100%;
-  position: relative;
-  z-index: 2;
-  background: #fff;
-  left: 0;
-  -moz-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.b-wrapper.jsCanvas.is-open {
-  left: 55%;
+  overflow: hidden;
 }
 
 /* END top-bar */
@@ -218,6 +211,7 @@ body.overflow {
 /* b-top-bar */
 .b-top-bar {
   *zoom: 1;
+  left: 0;
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -229,6 +223,9 @@ body.overflow {
   content: "";
   display: table;
   clear: both;
+}
+.b-top-bar.is-active {
+  left: 55%;
 }
 
 /* END b-top-bar */

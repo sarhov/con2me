@@ -23,8 +23,12 @@
 
 body, html{
   height: 100%;
+  // @include transition(all 0.3s);
+  left:0;
 }
-body.overflow{
+body.offMenu{
+  left: 55%;
+  position: relative;
   overflow: hidden;
 }
 
@@ -33,17 +37,9 @@ body.overflow{
   min-width: 640px;
   width: 100%;
   min-height: 100%;
-  position: relative;
-  z-index: 2;
-  background:#fff;
-  left: 0;
-  @include transition(all 0.6s);
-  &.jsCanvas.is-open{
-  left: 55%;
-  }
+  overflow: hidden;
  }
  /* END top-bar */
-
 
  /* b-navigation */
  .b-navigation{
@@ -74,12 +70,17 @@ body.overflow{
  /* b-top-bar */
  .b-top-bar{
   @include pie-clearfix;
+  // @include transition(all 0.3s);
+  left:0;
   position: fixed;
   z-index: 2;
   width: 100%;
   background:#f1f1f1;
   padding: 10px;
   border-bottom: 3px solid #d8d8d8;
+  &.is-active{
+    left: 55%;
+  }
  }
  /* END b-top-bar */
 

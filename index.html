@@ -6,7 +6,7 @@
   <title>Con2Me</title>
   <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
+<body >
   <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <symbol id="icon-menu" viewBox="0 0 1024 1024">
@@ -35,16 +35,9 @@
       </symbol>
     </defs>
   </svg>
-    <div class="b-navigation jsNav">
-      <div class="b-navigation__inner">
-        ddd
-      </div>
-      <!-- /.b-navigation__inner -->
-    </div>
-    <!-- /.b-navigation jsNav -->
-  <div class="b-wrapper jsCanvas">
 
-    <div class="b-top-bar">
+
+    <div class="b-top-bar jsBar">
       <div class="b-toggle-menu">
         <a href="#" class="b-toggle-menu__button jsOpenNav">
           <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
@@ -69,7 +62,15 @@
       <!-- /.b-add -->
     </div>
     <!-- /.b-top-bar -->
-
+    <div class="b-navigation jsNav" style="display:none;">
+      <div class="b-navigation__inner">
+        ddd
+      </div>
+      <!-- /.b-navigation__inner -->
+    </div>
+    <!-- /.b-navigation jsNav -->
+  <div class="b-wrapper">
+   
     <div class="b-content jsContent">
     
       <a href="product.html" class="b-item jsItem">
