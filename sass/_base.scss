@@ -1,0 +1,27 @@
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+.clearfix {
+  @include pie-clearfix;
+  background: none;
+}
+a{
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-size: 16px;
+    // flex-direction: row;
+    min-height: 100vh;
+    // available fonw-weights:  200, 300, 400, 600,
+    background:#1e1e1e;
+    color: #ddd;
+    font-family: sans-serif;
+}
