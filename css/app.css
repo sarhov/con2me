@@ -21,6 +21,11 @@ a:fous {
   outline: none;
 }
 
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 img {
   max-height: 100%;
   max-width: 100%;
