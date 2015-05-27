@@ -142,9 +142,6 @@ input, select {
   vertical-align: middle;
 }
 
-@viewport {
-  width: 640px;
-}
 .icon {
   display: inline-block;
   width: 1em;
