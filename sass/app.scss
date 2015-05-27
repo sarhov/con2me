@@ -55,6 +55,8 @@ body.offMenu{
   left: 0;
   height: 100%;
   top:0;
+  overflow: auto;
+
 }
  /* END b-navigation */
 
@@ -86,6 +88,9 @@ body.offMenu{
   border-bottom: 3px solid #d8d8d8;
   &.is-active{
     left: 55%;
+    svg{
+      color: #e1e1e1;
+    }
   }
   &.jsBar.is-active::before {
     background: #0d0d0d none repeat scroll 0 0;
@@ -240,6 +245,9 @@ body.offMenu{
 
  /* b-menu */
  .b-menu{
+  padding-bottom: 94px;
+  height: 100%;
+  position: relative;
   &__link{
     display: block;
     padding-left: 25px;
@@ -266,6 +274,18 @@ body.offMenu{
       background:#0d0d0d;
 
     }
+  }
+  &__input-submit{
+    color: #e1e1e1;
+    font-size: 32px;
+    position: absolute;
+    bottom:0;
+    background:#af0000;
+    width: 100%;
+    left:0;
+    height: 95px;
+    border: none;
+    cursor: pointer;
   }
 }
 .b-menu__item:nth-child(2n + 2) a{

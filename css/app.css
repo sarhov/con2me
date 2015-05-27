@@ -195,6 +195,7 @@ body.offMenu {
   left: 0;
   height: 100%;
   top: 0;
+  overflow: auto;
 }
 
 /* END b-navigation */
@@ -231,6 +232,9 @@ body.offMenu {
 }
 .b-top-bar.is-active {
   left: 55%;
+}
+.b-top-bar.is-active svg {
+  color: #e1e1e1;
 }
 .b-top-bar.jsBar.is-active::before {
   background: #0d0d0d none repeat scroll 0 0;
@@ -395,6 +399,11 @@ body.offMenu {
 
 /* END b-contact */
 /* b-menu */
+.b-menu {
+  padding-bottom: 94px;
+  height: 100%;
+  position: relative;
+}
 .b-menu__link {
   display: block;
   padding-left: 25px;
@@ -420,6 +429,18 @@ body.offMenu {
   padding-top: 25px;
   text-transform: uppercase;
   background: #0d0d0d;
+}
+.b-menu__input-submit {
+  color: #e1e1e1;
+  font-size: 32px;
+  position: absolute;
+  bottom: 0;
+  background: #af0000;
+  width: 100%;
+  left: 0;
+  height: 95px;
+  border: none;
+  cursor: pointer;
 }
 
 .b-menu__item:nth-child(2n + 2) a {
