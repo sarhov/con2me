@@ -165,6 +165,11 @@ input, select {
   font-size: 20px;
   color: #828282;
 }
+.icon-camera {
+  color: #00baff;
+  font-size: 120px;
+  height: 120px;
+}
 
 body, html {
   height: 100%;
@@ -315,7 +320,7 @@ body.offMenu {
 /* b-item */
 .b-item {
   *zoom: 1;
-  padding: 5px;
+  padding: 0 10px;
   overflow: hidden;
   margin-bottom: 30px;
   display: block;
@@ -487,3 +492,46 @@ body.offMenu {
 }
 
 /* END b-product */
+/* b-add-section */
+.b-add-section {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.b-add-section__file {
+  min-height: 230px;
+  height: 35%;
+  text-align: center;
+  position: relative;
+}
+.b-add-section__text {
+  color: #00baff;
+  font-size: 45px;
+}
+.b-add-section__fields {
+  height: 65%;
+  background: #ccc;
+}
+
+/* END b-add-section */
+#fileUpload {
+  display: none;
+  /* do not display the actual file upload button */
+}
+
+#customButton {
+  bottom: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 220px;
+  left: 0;
+  margin: auto;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

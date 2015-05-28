@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=640px, initial-scale=.5, maximum-scale=.5" />
+  <meta name="viewport" content="width=640px, initial-scale=.5, maximum-scale=.5" />
   <title>Con2Me</title>
   <link rel="stylesheet" href="css/app.css">
 </head>
@@ -275,8 +275,32 @@
 </div>
 <!-- /.b-content -->
 </div>
-<!-- /.b-wrapper jsCanvas -->
-
+<!-- /.b-wrapper -->
+<div class="b-add-section">
+  <div class="b-add-section__file">
+    <input type="file" id="fileUpload"> 
+    <div id="customButton">
+    <svg class="icon icon-camera"><use xlink:href="#icon-camera"></use></svg>
+    <div class="b-add-section__text">
+      Загрузить<br>
+      картинку
+    </div>
+    </div> 
+    <div id="fileName"></div> 
+  </div>
+  <!-- /.b-add-section__file -->
+  <div class="b-add-section__fields">
+    <form action="" class="b-add-form">
+      <div class="b-add-form__line">
+      <input type="number" class="b-add-form__input">
+    </div>
+      <!-- /.b-add-form__line -->
+    </form>
+    <!-- /.b-add-form -->
+  </div>
+  <!-- /.b-add-section__fields -->
+</div>
+<!-- /.b-add-section -->
 
 <script src="js/jquery.2.1.4.min.js"></script>
 <script src="js/functions.js"></script>

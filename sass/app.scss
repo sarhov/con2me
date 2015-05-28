@@ -26,6 +26,11 @@
     font-size: 20px;
     color: #828282;
   }
+  &-camera{
+    color: #00baff;
+    font-size: 120px;
+    height: 120px;
+  }
 }
 
 body, html{
@@ -170,7 +175,7 @@ body.offMenu{
  /* b-item */
  .b-item{
   @include pie-clearfix;
-  padding: 5px;
+  padding: 0 10px;
   // height: 195px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -335,3 +340,47 @@ body.offMenu{
   text-align: center;
  }
  /* END b-product */
+
+ /* b-add-section */
+ .b-add-section{
+  position: fixed;
+  background:#fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  // padding-top: 94px;
+  z-index: 10;
+  &__file{
+    min-height: 230px;
+    height: 35%;
+    text-align: center;
+    position: relative;
+  }
+  &__text{
+    color: #00baff;
+    font-size: 45px;
+  }
+  &__fields{
+    height: 65%;
+    background:#ccc;
+  }
+ }
+ /* END b-add-section */
+
+ #fileUpload{
+   display: none; /* do not display the actual file upload button */
+ }
+
+#customButton {
+  bottom: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 220px;
+  left: 0;
+  margin: auto;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
