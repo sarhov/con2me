@@ -209,12 +209,19 @@ body.offMenu{
   margin-bottom: 11px;
   &__text{
     font-size: 33px;
+    &_product{
+      font-size: 75px;
+    }
   }
   &__space{
     float: right;
     padding-top: 7px;
     color: #d7362d;
     font-size: 25px;
+    &_product{
+      font-size: 49px;
+      padding-top: 15px;
+    }
   }
 }
  /* END b-price */
@@ -227,6 +234,12 @@ body.offMenu{
   &__text{
     font-size: 17px;
     line-height: 1.2;
+    &_product{
+      line-height: 1.4;
+    }
+  }
+  &_product{
+    margin-bottom: 20px;
   }
 }
  /* END b-description */
@@ -239,9 +252,17 @@ body.offMenu{
     font-weight: bold;
     vertical-align: bottom;
     margin-right: 5px;
+    &_product{
+      font-size: 43px;
+      display: block;
+      margin-bottom: 5px;
+    }
   }
   &__phone{
     vertical-align: bottom;
+    &_product{
+      font-size: 35px;
+    }
   }
 }
  /* END b-contact */
@@ -303,6 +324,14 @@ body.offMenu{
   } 
 }
   
-
-
  /* END b-menu */
+
+ /* b-product */
+ .b-product{
+  padding: 15px 30px; 
+ }
+ .b-product-image{
+  padding: 15px 5px;
+  text-align: center;
+ }
+ /* END b-product */
