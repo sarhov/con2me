@@ -37,6 +37,9 @@ body, html{
   height: 100%;
   // @include transition(all 0.3s);
   left:0;
+  &.overflow{
+    overflow: hidden;
+  }
 }
 body.offMenu{
   left: 55%;
@@ -343,6 +346,7 @@ body.offMenu{
 
  /* b-add-section */
  .b-add-section{
+  display: none;
   position: fixed;
   background:#fff;
   width: 100%;
@@ -356,6 +360,7 @@ body.offMenu{
     height: 35%;
     text-align: center;
     position: relative;
+    padding-top: 40px;
   }
   &__text{
     color: #00baff;
@@ -363,8 +368,18 @@ body.offMenu{
   }
   &__fields{
     height: 65%;
-    background:#ccc;
+    // background:#ccc;
+      position: relative;
+  padding-bottom: 112px;
+  overflow: hidden;
   }
+  #fileName {
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 100%;
+  color: #00BAFF;
+}
  }
  /* END b-add-section */
 
@@ -384,3 +399,44 @@ body.offMenu{
   right: 0;
   top: 0;
 }
+
+/* b-add-form */
+.b-add-form{
+  overflow: auto;
+  height: 100%;
+  &__line{
+    border-top: 3px solid #c2c2c2;
+    &:last-of-type{
+      
+    border-bottom: 3px solid #c2c2c2;
+    }
+  }
+  &__input{
+    height: 75px;
+    font-size: 30px;
+    color: #00baff;
+    width: 100%;
+    padding: 10px;
+    padding-left: 15px;
+    border: none;
+    &_textarea{
+      resize: none;
+      height: 155px;
+      border: none;
+    }
+  }
+
+  &__submit{
+    border: none;
+    height: 112px;
+    background:#af0000;
+    font-size: 40px;
+    line-height: 100px;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+  }
+}
+/* END b-add-form */

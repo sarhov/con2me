@@ -20,6 +20,12 @@ $('.jsMenuItem').click(function(event) {
   };
 });
 
+$('.jsAdd').click(function(event) {
+  event.preventDefault();
+  $('.jsAddSection').fadeIn();
+  $('body, html').addClass('overflow')
+});
+
 document.getElementById("customButton").addEventListener("click", function(){
   document.getElementById("fileUpload").click();  // trigger the click of actual file upload button
 });

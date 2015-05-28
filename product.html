@@ -189,7 +189,48 @@
     <!-- /.b-content -->
   </div>
   <!-- /.b-wrapper -->
-
+<div class="b-add-section jsAddSection">
+  <div class="b-add-section__file">
+    <input type="file" id="fileUpload"> 
+    <div id="customButton">
+      <svg class="icon icon-camera"><use xlink:href="#icon-camera"></use></svg>
+      <div class="b-add-section__text">
+        Загрузить<br>
+        картинку
+      </div>
+    </div> 
+    <div id="fileName"></div> 
+  </div>
+  <!-- /.b-add-section__file -->
+  <div class="b-add-section__fields">
+    <form action="" class="b-add-form">
+      <div class="b-add-form__line">
+        <input type="number" class="b-add-form__input" placeholder="Цена">
+      </div>
+      <!-- /.b-add-form__line -->
+      <div class="b-add-form__line">
+      <input type="text" class="b-add-form__input" placeholder="Категория">
+      </div>
+      <!-- /.b-add-form__line -->
+      <div class="b-add-form__line">
+      <textarea type="text" class="b-add-form__input b-add-form__input_textarea" placeholder="Описание"></textarea>
+      </div>
+      <!-- /.b-add-form__line -->
+      <div class="b-add-form__line">
+        <input type="text" class="b-add-form__input" placeholder="Имя">
+      </div>
+      <!-- /.b-add-form__line -->
+      <div class="b-add-form__line">
+      <input type="tel" class="b-add-form__input" placeholder="Телефон">
+      </div>
+      <!-- /.b-add-form__line -->
+      <button type="submit" class="b-add-form__submit">Добавить объявление</button>
+    </form>
+    <!-- /.b-add-form -->
+  </div>
+  <!-- /.b-add-section__fields -->
+</div>
+<!-- /.b-add-section -->
 
   <script src="js/jquery.2.1.4.min.js"></script>
   <script src="js/functions.js"></script>
