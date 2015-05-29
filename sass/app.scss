@@ -23,7 +23,7 @@
     font-size: 35px;
   }
   &-checkbox-unchecked{
-    font-size: 20px;
+    font-size: 25px;
     color: #828282;
   }
   &-camera{
@@ -293,7 +293,7 @@ body.offMenu{
     padding-top: 15px;
     svg{
       float: right;
-      margin-top: 5px;
+      margin-top: 1px;
       + svg{
         display: none; 
       } 
@@ -331,17 +331,17 @@ body.offMenu{
     }
   } 
 }
-  
+
  /* END b-menu */
 
  /* b-product */
  .b-product{
   padding: 15px 30px; 
- }
- .b-product-image{
+}
+.b-product-image{
   padding: 15px 5px;
   text-align: center;
- }
+}
  /* END b-product */
 
  /* b-add-section */
@@ -369,25 +369,25 @@ body.offMenu{
   &__fields{
     height: 65%;
     // background:#ccc;
-      position: relative;
-  padding-bottom: 112px;
-  overflow: hidden;
+    position: relative;
+    padding-bottom: 112px;
+    overflow: hidden;
   }
   #fileName {
-  position: absolute;
-  text-align: center;
-  top: 12px;
-  width: 100%;
-  color: #00BAFF;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    width: 100%;
+    color: #00BAFF;
+  }
 }
- }
  /* END b-add-section */
 
  #fileUpload{
    display: none; /* do not display the actual file upload button */
  }
 
-#customButton {
+ #customButton {
   bottom: 0;
   cursor: pointer;
   display: inline-block;
@@ -407,8 +407,16 @@ body.offMenu{
   &__line{
     border-top: 3px solid #c2c2c2;
     &:last-of-type{
-      
-    border-bottom: 3px solid #c2c2c2;
+
+      border-bottom: 3px solid #c2c2c2;
+    }
+    select {
+      color: #00baff;
+      font-size: 30px;
+      height: 75px;
+      padding-left: 15px;
+      width: 100%;
+      border:none;
     }
   }
   &__input{
